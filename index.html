@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id='table'>
+    </div>
+    <hr>
+    <div id='instructions'></div>
+    <br>
+    <hr>
+    <div id='creator'>
+      <table>
+        <tr id='r0'>
+          <td id='r0c0' onclick='selectspot(this);'>&nbsp;</td><td id='r0c1' onclick='selectspot(this);'>&nbsp;</td><td id='r0c2' onclick='selectspot(this);'>&nbsp;</td><td id='r0c3' onclick='selectspot(this);'>&nbsp;</td><td id='r0c4' onclick='selectspot(this);'>&nbsp;</td><td id='r0c5' onclick='selectspot(this);'>&nbsp;</td><td id='r0c6' onclick='selectspot(this);'>&nbsp;</td><td id='r0c7' onclick='selectspot(this);'>&nbsp;</td><td id='r0c8' onclick='selectspot(this);'>&nbsp;</td><td id='r0c9' onclick='selectspot(this);'>&nbsp;</td><td id='r0c10' onclick='selectspot(this);'>&nbsp;</td>
+        </tr>
+        <tr id='r1'>
+          <td id='r1c0' onclick='selectspot(this);'>&nbsp;</td><td id='r1c1' onclick='selectspot(this);'>&nbsp;</td><td id='r1c2' onclick='selectspot(this);'>&nbsp;</td><td id='r1c3' onclick='selectspot(this);'>&nbsp;</td><td id='r1c4' onclick='selectspot(this);'>&nbsp;</td><td id='r1c5' onclick='selectspot(this);'>&nbsp;</td><td id='r1c6' onclick='selectspot(this);'>&nbsp;</td><td id='r1c7' onclick='selectspot(this);'>&nbsp;</td><td id='r1c8' onclick='selectspot(this);'>&nbsp;</td><td id='r1c9' onclick='selectspot(this);'>&nbsp;</td><td id='r1c10' onclick='selectspot(this);'>&nbsp;</td>
+        </tr>
+        <tr id='r2'>
+          <td id='r2c0' onclick='selectspot(this);'>🛒</td><td id='r2c1' onclick='selectspot(this);'>&nbsp;</td><td id='r2c2' onclick='selectspot(this);'>&nbsp;</td><td id='r2c3' onclick='selectspot(this);'>&nbsp;</td><td id='r2c4' onclick='selectspot(this);'>&nbsp;</td><td id='r2c5' onclick='selectspot(this);'>&nbsp;</td><td id='r2c6' onclick='selectspot(this);'>&nbsp;</td><td id='r2c7' onclick='selectspot(this);'>&nbsp;</td><td id='r2c8' onclick='selectspot(this);'>&nbsp;</td><td id='r2c9' onclick='selectspot(this);'>&nbsp;</td><td id='r2c10' onclick='selectspot(this);'>🧻</td>
+        </tr>
+        <tr id='r3'>
+          <td id='r3c0' onclick='selectspot(this);'>&nbsp;</td><td id='r3c1' onclick='selectspot(this);'>&nbsp;</td><td id='r3c2' onclick='selectspot(this);'>&nbsp;</td><td id='r3c3' onclick='selectspot(this);'>&nbsp;</td><td id='r3c4' onclick='selectspot(this);'>&nbsp;</td><td id='r3c5' onclick='selectspot(this);'>&nbsp;</td><td id='r3c6' onclick='selectspot(this);'>&nbsp;</td><td id='r3c7' onclick='selectspot(this);'>&nbsp;</td><td id='r3r3c8' onclick='selectspot(this);'>&nbsp;</td><td id='r3c9' onclick='selectspot(this);'>&nbsp;</td><td id='r3c10' onclick='selectspot(this);'>&nbsp;</td>
+        </tr>
+        <tr id='r4'>
+          <td id='r4c0' onclick='selectspot(this);'>&nbsp;</td><td id='r4c1' onclick='selectspot(this);'>&nbsp;</td><td id='r4c2' onclick='selectspot(this);'>&nbsp;</td><td id='r4c3' onclick='selectspot(this);'>&nbsp;</td><td id='r4c4' onclick='selectspot(this);'>&nbsp;</td><td id='r4c5' onclick='selectspot(this);'>&nbsp;</td><td id='r4c6' onclick='selectspot(this);'>&nbsp;</td><td id='r4c7' onclick='selectspot(this);'>&nbsp;</td><td id='r4c8' onclick='selectspot(this);'>&nbsp;</td><td id='r4c9' onclick='selectspot(this);'>&nbsp;</td><td id='r4c10' onclick='selectspot(this);''>&nbsp;</td>
+        </tr>
+      </table>
+    </div>
+    <div id='selector'>
+      <b>Select a square on the map, and then select the tile to place.</b>
+      <table>
+        <tr>
+          <td onclick='selecttile("c", "🛒");' id='cart'>🛒</td>
+          <td onclick='selecttile("t", "🧻");' id='toiletpaper'>🧻</td>
+          <td onclick='selecttile("p", "👨");' id='person'>👨</td>
+          <td onclick='selecttile("i", "🤢");' id='infector'>🤢</td>
+          <td onclick='selecttile("f", "🔥");' id='fire'>🔥</td>
+          <td onclick='selecttile("w", "🧱");' id='wall'>🧱</td>
+        </tr>
+        <tr>
+          <td onclick='selecttile("v", "🚪");' id='vault'>🚪</td>
+          <td onclick='selecttile("g", "👮");' id='guard'>👮</td>
+          <td onclick='selecttile("~", "⚠️");' id='water'>⚠️</td>
+          <td onclick='selecttile("=", "🔲");' id='secretpassageway'>🔲</td>
+          <td onclick='selecttile("s", "🧼");' id='soap'>🧼</td>
+          <td onclick='selecttile("s", ".");' id='empty'>Clear</td>
+        </tr>
+        <tr>
+          <td onclick='selecttile("e", "🧯");' id='fireextinguisher'>🧯</td>
+          <td onclick='selecttile("k", "🔑");' id='key'>🔑</td>
+          <td onclick='selecttile("d", "🥤");' id='drink'>🥤</td>
+          <td onclick='selecttile("-", "🔫");' id='gun'>🔫</td>
+          <td onclick='selecttile("x", "🥽");' id='xraygoggles'>🥽</td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <hr>
+    <b>Code:</b>
+    <pre id='code'>[[".",".",".",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".",".",".","."],["c",".",".",".",".",".",".",".",".",".","t"],[".",".",".",".",".",".",".",".",".",".","."],[".",".",".",".",".",".",".",".",".",".","."]]
+    </pre>
+  </body>
+</html>
